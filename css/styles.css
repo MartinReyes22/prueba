@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* GRID ESTRUCTURAL */
+
+#grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 110px 2500px 150px ;
+    grid-template-areas:"nav"
+                        "main"
+                        "footer";
+}
+
+#grid_carrito{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 110px 1300px 150px ;
+    grid-template-areas:"nav"
+                        "main"
+                        "footer";
+}
+
+#grid_catalogo{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 110px 1300px 150px ;
+    grid-template-areas:"nav"
+                        "main"
+                        "footer";
+}
+
+
+
+/* H´s */
+
+
+
+/* NAV */
+
+nav{
+    background-color: rgb(109, 16, 16);
+}
+
+.nav_catalog{
+    background-color: white;
+}
+
+
+ul{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+
+.navbar_img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 145px;
+}
+
+
+#icon-car{
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+}
+
+
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* HEADER */
+
+
+.img_slide{
+    width: 100px;
+    height: 80px;
+}
+
+/* MAIN */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+/* SECTIONS */
+
+section{
+    display: flex;
+    background-color: rgb(196, 196, 21);
+    height: 25%;
+    width: 80%;
+    border-radius: 20px;
+}
+
+#carrito{
+    height: 45%;
+    width: 70%;
+    border-radius: 20px;
+}
+
+#catalogo{
+    height: 50%;
+    width: 70%;
+    border-radius: 20px;
+}
+
+
+.grid_section_index1{
+    display: grid;
+    grid-template-columns: 60% 25%;
+    grid-template-rows: 40% 40% ;
+    grid-template-areas:"slide boton1"
+                        "slide boton2";
+    justify-content: space-around;
+    align-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid_section_carrito{
+    display: grid;
+    grid-template-columns: 30% 25%;
+    grid-template-rows: 10% 45% 10% ;
+    grid-template-areas:"img titulo"
+                        "img parrafo"
+                        "img boton";
+    justify-content: space-around;
+    align-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+.img_carrito{
+    width: 350px;
+    grid-area: img;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.img_section{
+    grid-area: slide ;
+}
+
+.boton_section{
+    width: 40%;
+    height: 100px;
+    background-color: black;
+    color: rgb(109, 16, 16);
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+#boton{
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.card_padre{
+    display: flex;
+    height: 700px;
+    width: 85%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 90px;
+    border-radius: 50px;
+}
+
+.card_hijo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    height: 80%;
+    width: 30%;
+}
+
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    color: white;
+
+}
+
+footer a{
+    color: white;
+}
+
+
+
+footer{
+    background-color: rgb(109, 16, 16);
+}
